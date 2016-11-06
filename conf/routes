@@ -1,0 +1,27 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+GET     /                           controllers.HomeController.index
+
+
+# Map static resources from the /public folder to the /assets URL path
+#GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+
+GET /atawa/:mp			controllers.PurchaseController.getRecentPurchases(mp: String)
+
+GET /api/recent_purchases/​:user   controllers.PurchaseController.getRecentPurchases(user: String)
+
+GET /users              controllers.UserController.listAllUser
+
+#GET /users/:username    controllers.UserController.getUserByName(username: String)
+
+GET /products			controllers.ProductController.listAllProducts
+				
+#GET /products/:id       controllers.ProductController.getProductById(id: Int)
+
+
+
+#GET /api/recent_purchases  controllers.PurchaseController.show
