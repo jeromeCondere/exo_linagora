@@ -1,0 +1,6 @@
+La route /api/recent_purchase/:user n'est pas disponible
+à la place il faut utiliser /atawa/:username
+
+Le projet est configuré pour tourner en localhost sur le port 9000
+et il va chercher les données sur le localhost:8000
+lorsqu'on lance le serveur avec npm start
